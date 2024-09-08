@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <div class = 'login'>
+            <h1>FWI Prediction</h1>
+
+
+            <!-- Main Input for Receiving query to our ML -->
+            <form action = "{{ url_for('predict_datapoint')}}" method = 'POST'>
+                <input type = 'Text' name = "Temperature" placeholder = "Temperature" required = "required" /><br>
+                <input type = 'Text' name = "RH" placeholder = "RH" required = "required" /><br>
+                <input type = 'Text' name = "Ws" placeholder = "Ws" required = "required" /><br>
+                <input type = 'Text' name = "Rain" placeholder = "Rain" required = "required" /><br>
+                <input type = 'Text' name = "FFMC" placeholder = "FFMC" required = "required" /><br>
+                <input type = 'Text' name = "DMC" placeholder = "DMC" required = "required" /><br>
+                <input type = 'Text' name = "ISI" placeholder = "ISI" required = "required" /><br>
+                <input type = 'Text' name = "Classes" placeholder = "Classes" required = "required" /><br>
+                <input type = 'Text' name = "Region" placeholder = "Region" required = "required" /><br>
+
+
+                <button type = 'submit' class = "btn btn-primary btn-block btn-large">predict</button>
+            </form>
+        <h2>
+            The FWI prediction is {{results}}
+        </h2>
+        </div>
+    </body>
+</htm
