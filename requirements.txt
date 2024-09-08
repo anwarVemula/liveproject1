@@ -6,6 +6,4 @@ scikit-learn
 catboost
 xgboost
 Flask
-itsdangerous==2.0.1
-
-#-e .p
+itsdange
